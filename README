@@ -1,0 +1,82 @@
+# Benchmarking SLAM Algorithms for Indoor AGV Navigation Using ROS2 and Gazebo
+
+## Overview
+Reliable localization and mapping are critical for autonomous mobile robots operating in indoor environments. This project investigates the performance of several Simultaneous Localization and Mapping (SLAM) algorithms through a simulation-based benchmarking study.
+
+Using ROS2 and Gazebo with a TurtleBot3 simulation platform, multiple SLAM algorithms were implemented and evaluated under consistent navigation parameters across controlled indoor environments.
+
+The objective is to identify the most suitable SLAM configuration for accurate and reliable indoor AGV navigation.
+
+---
+
+## Objectives
+- Implement multiple SLAM algorithms within a ROS2 navigation framework
+- Evaluate the performance of each SLAM method under identical simulation conditions
+- Compare localization accuracy and mapping quality
+- Identify the most suitable algorithm for indoor autonomous navigation
+
+---
+
+## System Architecture
+The simulation environment consists of:
+
+Robot Platform:
+- TurtleBot3
+
+Simulation Environment:
+- Gazebo
+
+Middleware:
+- ROS2
+
+Navigation Stack:
+- ROS2 Navigation2
+
+SLAM Algorithms Tested:
+- GMapping
+- Cartographer
+- SLAM Toolbox
+
+Each SLAM algorithm was integrated into the same navigation framework to ensure fair comparison across experiments.
+
+---
+
+## Experimental Methodology
+The benchmarking process was conducted in multiple simulated indoor environments.
+
+Each SLAM algorithm was tested using identical robot motion parameters and sensor configurations.
+
+Performance metrics were collected for each experiment to evaluate localization accuracy and mapping quality.
+
+---
+
+## Evaluation Metrics
+The following metrics were used for comparison:
+
+Trajectory RMSE  
+Measures the deviation between the estimated trajectory and the ground truth trajectory.
+
+Map Quality  
+Evaluates the accuracy and consistency of the generated occupancy grid map.
+
+Navigation Completion Time  
+Measures the time required for the robot to complete predefined navigation tasks.
+
+---
+
+## Results
+A comparative analysis was performed across the tested SLAM algorithms to determine their performance in indoor navigation scenarios.
+
+The evaluation results highlight differences in localization accuracy, mapping consistency, and computational efficiency.
+
+The best-performing SLAM configuration from this study will be used in subsequent work focusing on real-world localization error analysis and system improvement.
+
+---
+
+## Key Skills Demonstrated
+- Robot Operating System (ROS2)
+- Gazebo robotic simulation
+- SLAM algorithm implementation
+- autonomous navigation systems
+- robotics system benchmarking
+- performance evaluation using RMSE metrics
